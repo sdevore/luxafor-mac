@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSColor (Luxa4Mac)
-
++ (CGColorRef)NSColorToCGColor:(NSColor *)color;
 @end

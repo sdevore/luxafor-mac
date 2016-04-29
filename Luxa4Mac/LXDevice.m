@@ -42,15 +42,7 @@
     return sharedLuxaforDevice;
 }
 
-+ (CGColorRef)NSColorToCGColor:(NSColor *)color {
-    NSInteger numberOfComponents = [color numberOfComponents];
-    CGFloat components[numberOfComponents];
-    CGColorSpaceRef colorSpace = [[color colorSpace] CGColorSpace];
-    [color getComponents:(CGFloat *)&components];
-    CGColorRef cgColor = CGColorCreate(colorSpace, components);
 
-    return cgColor;
-}
 
 - (void)setColor:(CGColorRef)color {
     if (CGColorGetNumberOfComponents(color) == 4) {
