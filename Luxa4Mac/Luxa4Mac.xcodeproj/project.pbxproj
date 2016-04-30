@@ -25,7 +25,6 @@
 		2BE83D261CD310ED003AD16D /* NSColor+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE83D231CD310ED003AD16D /* NSColor+Luxa4Mac.m */; };
 		2BE83D291CD311FC003AD16D /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2BE83D281CD311FC003AD16D /* .travis.yml */; };
 		2BE83D2D1CD31213003AD16D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2BE83D2A1CD31213003AD16D /* LICENSE */; };
-		2BE83D2F1CD31213003AD16D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2BE83D2C1CD31213003AD16D /* README.md */; };
 		2BE83D321CD316BF003AD16D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2BE83D311CD316BF003AD16D /* Podfile */; };
 		801D19904E9DBFCE5838AFD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA1778679F784F580C9F56B /* libPods.a */; };
 		E037FB47DAE23ADBDE0B13B4 /* libPods-Luxa4Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D19C7493E7E386920DE5A1 /* libPods-Luxa4Mac.a */; };
@@ -105,10 +104,12 @@
 		2BE83D2A1CD31213003AD16D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2BE83D2C1CD31213003AD16D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2BE83D301CD3123C003AD16D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		2BE83D311CD316BF003AD16D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		2BE83D311CD316BF003AD16D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		68E7A1266548DB0B058F8D58 /* Pods-Luxa4Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luxa4Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Luxa4Mac/Pods-Luxa4Mac.release.xcconfig"; sourceTree = "<group>"; };
 		6AA1778679F784F580C9F56B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		800F5DB8462B9FC5E0289DCE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9362C6580796C0B73EE26269 /* Pods-Luxa4Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luxa4Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Luxa4Mac/Pods-Luxa4Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		B839AE5A6E9FD0DD686465E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +282,8 @@
 			children = (
 				9362C6580796C0B73EE26269 /* Pods-Luxa4Mac.debug.xcconfig */,
 				68E7A1266548DB0B058F8D58 /* Pods-Luxa4Mac.release.xcconfig */,
+				800F5DB8462B9FC5E0289DCE /* Pods.debug.xcconfig */,
+				B839AE5A6E9FD0DD686465E6 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -492,7 +495,6 @@
 				2BE83D1B1CD31014003AD16D /* LXDevice.m in Sources */,
 				2B9E679F1CD1483D00D4E347 /* ViewController.m in Sources */,
 				2B9E679C1CD1483D00D4E347 /* main.m in Sources */,
-				2BE83D2F1CD31213003AD16D /* README.md in Sources */,
 				2B9E67991CD1483D00D4E347 /* AppDelegate.m in Sources */,
 				2BE83D171CD30FE0003AD16D /* hid.c in Sources */,
 				2BE83D241CD310ED003AD16D /* NSColor+Luxa4Mac.m in Sources */,

@@ -8,8 +8,16 @@
 
 #import "AppDelegate.h"
 #import "DMKevlarApplication.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import <DevMateKit/DevMateKit.h>
+// Log levels: off, error, warn, info, verbose
+#import "XCDLumberjackNSLogger.h"
 
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarn;
+#endif
 @interface AppDelegate ()
 
 @end
@@ -24,6 +32,20 @@
     if (!DMKIsApplicationActivated(NULL)) {
         [DevMateKit setupTimeTrial:nil withTimeInterval:kDMTrialWeek];
     }
+    [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
+    [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    XCDLumberjackNSLogger *logger = [XCDLumberjackNSLogger new];
+    [DDLog addLogger:logger withLevel:DDLogLevelAll]; // normally DDLogLevelWarning | DDLogLevelErrorn
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[NSColor greenColor] backgroundColor:nil forFlag:DDLogFlagDebug];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[NSColor blueColor] backgroundColor:nil forFlag:DDLogFlagInfo];
+
+
+    DDLogVerbose(@"Verbose");
+    DDLogDebug(@"Debug");
+    DDLogInfo(@"Info");
+    DDLogWarn(@"Warn");
+    DDLogError(@"Error");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

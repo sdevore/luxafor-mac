@@ -1,5 +1,5 @@
 workspace 'luxafor-mac'
-xcodeproj 'Luxa4Mac.xcodeproj'
+xcodeproj 'Luxa4Mac/Luxa4Mac.xcodeproj'
 
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
