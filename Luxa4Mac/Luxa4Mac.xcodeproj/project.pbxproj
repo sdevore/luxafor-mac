@@ -56,6 +56,7 @@
 		2B579AC41CD59FA800CFAEDD /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		2B579AC51CD59FB000CFAEDD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2B579AC61CD59FBF00CFAEDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2B579AC71CD648FE00CFAEDD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2B9CA57F1CD44F1100B5D5F1 /* Luxa4Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luxa4Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9CA5821CD44F1100B5D5F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B9CA5831CD44F1100B5D5F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		2B579AC31CD59F6400CFAEDD /* Settings and Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B579AC71CD648FE00CFAEDD /* Podfile */,
 				2B579AC61CD59FBF00CFAEDD /* README.md */,
 				2B579AC51CD59FB000CFAEDD /* LICENSE */,
 				2B579AC41CD59FA800CFAEDD /* .travis.yml */,
