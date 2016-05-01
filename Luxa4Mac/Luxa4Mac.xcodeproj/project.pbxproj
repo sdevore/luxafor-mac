@@ -13,6 +13,10 @@
 		2B9CA58C1CD44F1100B5D5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CA58B1CD44F1100B5D5F1 /* Assets.xcassets */; };
 		2B9CA58F1CD44F1100B5D5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CA58D1CD44F1100B5D5F1 /* Main.storyboard */; };
 		2B9CA59A1CD44F1100B5D5F1 /* Luxa4MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5991CD44F1100B5D5F1 /* Luxa4MacTests.m */; };
+		2B9CA5AD1CD4510900B5D5F1 /* Luxa4MacXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5AC1CD4510900B5D5F1 /* Luxa4MacXPC.m */; };
+		2B9CA5AF1CD4510900B5D5F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5AE1CD4510900B5D5F1 /* main.m */; };
+		2B9CA5B31CD4510900B5D5F1 /* Luxa4MacXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 2B9CA5A81CD4510900B5D5F1 /* Luxa4MacXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B9CA5BA1CD4518600B5D5F1 /* NSColor+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */; };
 		A0F1CAC6E80E3FE517C67216 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32050B235EDEDBE85DD0B1 /* libPods.a */; };
 		F82C4DDFAA2E55CD898B09A5 /* libPods-Luxa4MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */; };
 /* End PBXBuildFile section */
@@ -25,9 +29,33 @@
 			remoteGlobalIDString = 2B9CA57E1CD44F1100B5D5F1;
 			remoteInfo = Luxa4Mac;
 		};
+		2B9CA5B11CD4510900B5D5F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B9CA5771CD44F1100B5D5F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B9CA5A71CD4510900B5D5F1;
+			remoteInfo = Luxa4MacXPC;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B9CA5B71CD4510900B5D5F1 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				2B9CA5B31CD4510900B5D5F1 /* Luxa4MacXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B579AC41CD59FA800CFAEDD /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		2B579AC51CD59FB000CFAEDD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2B579AC61CD59FBF00CFAEDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2B9CA57F1CD44F1100B5D5F1 /* Luxa4Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luxa4Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9CA5821CD44F1100B5D5F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B9CA5831CD44F1100B5D5F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +68,14 @@
 		2B9CA5951CD44F1100B5D5F1 /* Luxa4MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Luxa4MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9CA5991CD44F1100B5D5F1 /* Luxa4MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luxa4MacTests.m; sourceTree = "<group>"; };
 		2B9CA59B1CD44F1100B5D5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B9CA5A81CD4510900B5D5F1 /* Luxa4MacXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = Luxa4MacXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9CA5AA1CD4510900B5D5F1 /* Luxa4MacXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Luxa4MacXPCProtocol.h; sourceTree = "<group>"; };
+		2B9CA5AB1CD4510900B5D5F1 /* Luxa4MacXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Luxa4MacXPC.h; sourceTree = "<group>"; };
+		2B9CA5AC1CD4510900B5D5F1 /* Luxa4MacXPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luxa4MacXPC.m; sourceTree = "<group>"; };
+		2B9CA5AE1CD4510900B5D5F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B9CA5B01CD4510900B5D5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B9CA5B81CD4518600B5D5F1 /* NSColor+Luxa4Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Luxa4Mac.h"; path = "Categories/NSColor+Luxa4Mac.h"; sourceTree = "<group>"; };
+		2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Luxa4Mac.m"; path = "Categories/NSColor+Luxa4Mac.m"; sourceTree = "<group>"; };
 		394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Luxa4MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C79093535E31CA830450BEB /* Pods-Luxa4MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luxa4MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luxa4MacTests/Pods-Luxa4MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD37AD31123B98A5DCF725B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,14 +101,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B9CA5A51CD4510900B5D5F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B579AC31CD59F6400CFAEDD /* Settings and Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B579AC61CD59FBF00CFAEDD /* README.md */,
+				2B579AC51CD59FB000CFAEDD /* LICENSE */,
+				2B579AC41CD59FA800CFAEDD /* .travis.yml */,
+			);
+			name = "Settings and Files";
+			sourceTree = "<group>";
+		};
 		2B9CA5761CD44F1100B5D5F1 = {
 			isa = PBXGroup;
 			children = (
+				2B579AC31CD59F6400CFAEDD /* Settings and Files */,
 				2B9CA5811CD44F1100B5D5F1 /* Luxa4Mac */,
 				2B9CA5981CD44F1100B5D5F1 /* Luxa4MacTests */,
+				2B9CA5A91CD4510900B5D5F1 /* Luxa4MacXPC */,
 				2B9CA5801CD44F1100B5D5F1 /* Products */,
 				D807A220DDFDBDF174E7751E /* Pods */,
 				47FBFE2AF0000A8561005413 /* Frameworks */,
@@ -84,6 +139,7 @@
 			children = (
 				2B9CA57F1CD44F1100B5D5F1 /* Luxa4Mac.app */,
 				2B9CA5951CD44F1100B5D5F1 /* Luxa4MacTests.xctest */,
+				2B9CA5A81CD4510900B5D5F1 /* Luxa4MacXPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +155,7 @@
 				2B9CA58D1CD44F1100B5D5F1 /* Main.storyboard */,
 				2B9CA5901CD44F1100B5D5F1 /* Info.plist */,
 				2B9CA5851CD44F1100B5D5F1 /* Supporting Files */,
+				2B9CA5BB1CD4518C00B5D5F1 /* Categories */,
 			);
 			path = Luxa4Mac;
 			sourceTree = "<group>";
@@ -118,6 +175,27 @@
 				2B9CA59B1CD44F1100B5D5F1 /* Info.plist */,
 			);
 			path = Luxa4MacTests;
+			sourceTree = "<group>";
+		};
+		2B9CA5A91CD4510900B5D5F1 /* Luxa4MacXPC */ = {
+			isa = PBXGroup;
+			children = (
+				2B9CA5AA1CD4510900B5D5F1 /* Luxa4MacXPCProtocol.h */,
+				2B9CA5AB1CD4510900B5D5F1 /* Luxa4MacXPC.h */,
+				2B9CA5AC1CD4510900B5D5F1 /* Luxa4MacXPC.m */,
+				2B9CA5AE1CD4510900B5D5F1 /* main.m */,
+				2B9CA5B01CD4510900B5D5F1 /* Info.plist */,
+			);
+			path = Luxa4MacXPC;
+			sourceTree = "<group>";
+		};
+		2B9CA5BB1CD4518C00B5D5F1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2B9CA5B81CD4518600B5D5F1 /* NSColor+Luxa4Mac.h */,
+				2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		47FBFE2AF0000A8561005413 /* Frameworks */ = {
@@ -153,10 +231,12 @@
 				2B9CA57D1CD44F1100B5D5F1 /* Resources */,
 				F2DC2EB2FF7C4AEA02AD1D3F /* Embed Pods Frameworks */,
 				8A26F7A191816A5EE3268724 /* Copy Pods Resources */,
+				2B9CA5B71CD4510900B5D5F1 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2B9CA5B21CD4510900B5D5F1 /* PBXTargetDependency */,
 			);
 			name = Luxa4Mac;
 			productName = Luxa4Mac;
@@ -184,6 +264,23 @@
 			productReference = 2B9CA5951CD44F1100B5D5F1 /* Luxa4MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2B9CA5A71CD4510900B5D5F1 /* Luxa4MacXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B9CA5B61CD4510900B5D5F1 /* Build configuration list for PBXNativeTarget "Luxa4MacXPC" */;
+			buildPhases = (
+				2B9CA5A41CD4510900B5D5F1 /* Sources */,
+				2B9CA5A51CD4510900B5D5F1 /* Frameworks */,
+				2B9CA5A61CD4510900B5D5F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Luxa4MacXPC;
+			productName = Luxa4MacXPC;
+			productReference = 2B9CA5A81CD4510900B5D5F1 /* Luxa4MacXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +296,9 @@
 					2B9CA5941CD44F1100B5D5F1 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 2B9CA57E1CD44F1100B5D5F1;
+					};
+					2B9CA5A71CD4510900B5D5F1 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -217,6 +317,7 @@
 			targets = (
 				2B9CA57E1CD44F1100B5D5F1 /* Luxa4Mac */,
 				2B9CA5941CD44F1100B5D5F1 /* Luxa4MacTests */,
+				2B9CA5A71CD4510900B5D5F1 /* Luxa4MacXPC */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +333,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2B9CA5931CD44F1100B5D5F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9CA5A61CD4510900B5D5F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,6 +449,7 @@
 				2B9CA58A1CD44F1100B5D5F1 /* ViewController.m in Sources */,
 				2B9CA5871CD44F1100B5D5F1 /* main.m in Sources */,
 				2B9CA5841CD44F1100B5D5F1 /* AppDelegate.m in Sources */,
+				2B9CA5BA1CD4518600B5D5F1 /* NSColor+Luxa4Mac.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +461,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B9CA5A41CD4510900B5D5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9CA5AF1CD4510900B5D5F1 /* main.m in Sources */,
+				2B9CA5AD1CD4510900B5D5F1 /* Luxa4MacXPC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,6 +477,11 @@
 			isa = PBXTargetDependency;
 			target = 2B9CA57E1CD44F1100B5D5F1 /* Luxa4Mac */;
 			targetProxy = 2B9CA5961CD44F1100B5D5F1 /* PBXContainerItemProxy */;
+		};
+		2B9CA5B21CD4510900B5D5F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B9CA5A71CD4510900B5D5F1 /* Luxa4MacXPC */;
+			targetProxy = 2B9CA5B11CD4510900B5D5F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,6 +630,28 @@
 			};
 			name = Release;
 		};
+		2B9CA5B41CD4510900B5D5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Luxa4MacXPC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4MacXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B9CA5B51CD4510900B5D5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Luxa4MacXPC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4MacXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,6 +678,15 @@
 			buildConfigurations = (
 				2B9CA5A21CD44F1100B5D5F1 /* Debug */,
 				2B9CA5A31CD44F1100B5D5F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B9CA5B61CD4510900B5D5F1 /* Build configuration list for PBXNativeTarget "Luxa4MacXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9CA5B41CD4510900B5D5F1 /* Debug */,
+				2B9CA5B51CD4510900B5D5F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
