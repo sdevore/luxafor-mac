@@ -3,7 +3,7 @@ osx_image: xcode7.2 #2
 xcode_workspace: Luxa4Mac/Luxa4Mac.xcworkspace #3
 xcode_scheme: Luxa4Mac #4
 xcode_sdk: macosx10.11 #5
-podfile: Podfile
+podfile: Luxa4Mac/Podfile
 
 notifications:
 email:
