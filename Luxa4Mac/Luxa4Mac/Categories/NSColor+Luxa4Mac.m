@@ -10,4 +10,17 @@
 
 @implementation NSColor (Luxa4Mac)
 
+- (NSData *)L4Mdata {
+    return [NSArchiver archivedDataWithRootObject:self];
+}
+
++ (CGColorRef)L4McolorToCGColor:(NSColor *)color {
+    NSInteger numberOfComponents = [color numberOfComponents];
+    CGFloat components[numberOfComponents];
+    CGColorSpaceRef colorSpace = [[color colorSpace] CGColorSpace];
+    [color getComponents:(CGFloat *)&components];
+    CGColorRef cgColor = CGColorCreate(colorSpace, components);
+    return cgColor;
+}
+
 @end
