@@ -6,8 +6,8 @@
 //  Copyright © 2016 Samuel DeVore. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
 
+#import <XCTest/XCTest.h>
 @interface Luxa4MacTests : XCTestCase
 
 @end
@@ -24,10 +24,12 @@
     [super tearDown];
 }
 
+
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
