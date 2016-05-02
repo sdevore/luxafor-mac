@@ -6,18 +6,26 @@
 //  Copyright © 2016 Samuel DeVore. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSColor+Luxa4Mac.h"
 
-// The protocol that this service will vend as its API. This header file will also need to be visible to the process hosting the service.
+#import <Foundation/Foundation.h>
+// The protocol that this service will vend as its API. This header file will also need to be visible to the process
+// hosting the service.
 @protocol Luxa4MacXPCProtocol
 
 // Replace the API of this protocol with an API appropriate to the service you are vending.
 - (void)upperCaseString:(NSString *)aString withReply:(void (^)(NSString *))reply;
-    
+
+- (void)isDeviceConnected:(void (^)(BOOL connected))reply;
+
+- (void)setColorData:(NSData *)newColorAsData
+      withTransition:(NSInteger)transition
+           withReply:(void (^)(BOOL completed))reply;
 @end
 
 /*
- To use the service from an application or other process, use NSXPCConnection to establish a connection to the service by doing something like this:
+ To use the service from an application or other process, use NSXPCConnection to establish a connection to the service
+by doing something like this:
 
      _connectionToService = [[NSXPCConnection alloc] initWithServiceName:@"com.scidsolutions.Luxa4MacXPC"];
      _connectionToService.remoteObjectInterface = [NSXPCInterface interfaceWithProtocol:@protocol(StringModifing)];
