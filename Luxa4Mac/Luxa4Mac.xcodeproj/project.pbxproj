@@ -17,6 +17,14 @@
 		2B9CA5AF1CD4510900B5D5F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5AE1CD4510900B5D5F1 /* main.m */; };
 		2B9CA5B31CD4510900B5D5F1 /* Luxa4MacXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 2B9CA5A81CD4510900B5D5F1 /* Luxa4MacXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B9CA5BA1CD4518600B5D5F1 /* NSColor+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */; };
+		2BEDCF721CD6EB1600977146 /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF6D1CD6EB1600977146 /* hid.c */; };
+		2BEDCF741CD6EB1600977146 /* LXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF701CD6EB1600977146 /* LXDevice.m */; };
+		2BEDCF771CD6F92500977146 /* NSData+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF761CD6F92500977146 /* NSData+Luxa4Mac.m */; };
+		2BEDCF781CD6FC4A00977146 /* NSData+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF761CD6F92500977146 /* NSData+Luxa4Mac.m */; };
+		2BEDCF791CD6FC4E00977146 /* NSColor+Luxa4Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */; };
+		2BEDCF7E1CD700D600977146 /* DeviceColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF7D1CD700D600977146 /* DeviceColor.m */; };
+		2BEDCF801CD703AC00977146 /* DeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDCF7F1CD703AC00977146 /* DeviceTests.m */; };
+		744E29AAE692784B2AAFFB40 /* libPods-Luxa4Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF925A08145BB39F0617D79 /* libPods-Luxa4Mac.a */; };
 		A0F1CAC6E80E3FE517C67216 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32050B235EDEDBE85DD0B1 /* libPods.a */; };
 		F82C4DDFAA2E55CD898B09A5 /* libPods-Luxa4MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */; };
 /* End PBXBuildFile section */
@@ -56,7 +64,7 @@
 		2B579AC41CD59FA800CFAEDD /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		2B579AC51CD59FB000CFAEDD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2B579AC61CD59FBF00CFAEDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2B579AC71CD648FE00CFAEDD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2B579AC71CD648FE00CFAEDD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B9CA57F1CD44F1100B5D5F1 /* Luxa4Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luxa4Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9CA5821CD44F1100B5D5F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B9CA5831CD44F1100B5D5F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,9 +85,21 @@
 		2B9CA5B01CD4510900B5D5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B9CA5B81CD4518600B5D5F1 /* NSColor+Luxa4Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Luxa4Mac.h"; path = "Categories/NSColor+Luxa4Mac.h"; sourceTree = "<group>"; };
 		2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Luxa4Mac.m"; path = "Categories/NSColor+Luxa4Mac.m"; sourceTree = "<group>"; };
+		2BEDCF6D1CD6EB1600977146 /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
+		2BEDCF6E1CD6EB1600977146 /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		2BEDCF6F1CD6EB1600977146 /* LXDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDevice.h; sourceTree = "<group>"; };
+		2BEDCF701CD6EB1600977146 /* LXDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDevice.m; sourceTree = "<group>"; };
+		2BEDCF751CD6F92500977146 /* NSData+Luxa4Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Luxa4Mac.h"; path = "Categories/NSData+Luxa4Mac.h"; sourceTree = "<group>"; };
+		2BEDCF761CD6F92500977146 /* NSData+Luxa4Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Luxa4Mac.m"; path = "Categories/NSData+Luxa4Mac.m"; sourceTree = "<group>"; };
+		2BEDCF7A1CD7006300977146 /* Luxa4Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Luxa4Mac.entitlements; sourceTree = "<group>"; };
+		2BEDCF7B1CD7007F00977146 /* Luxa4MacXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Luxa4MacXPC.entitlements; sourceTree = "<group>"; };
+		2BEDCF7C1CD700D600977146 /* DeviceColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceColor.h; sourceTree = "<group>"; };
+		2BEDCF7D1CD700D600977146 /* DeviceColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceColor.m; sourceTree = "<group>"; };
+		2BEDCF7F1CD703AC00977146 /* DeviceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTests.m; sourceTree = "<group>"; };
 		394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Luxa4MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C79093535E31CA830450BEB /* Pods-Luxa4MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luxa4MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luxa4MacTests/Pods-Luxa4MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD37AD31123B98A5DCF725B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF925A08145BB39F0617D79 /* libPods-Luxa4Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Luxa4Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B093D9869278B60087FC2FDB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF32050B235EDEDBE85DD0B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E9ABF219441B9FCD539177 /* Pods-Luxa4MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luxa4MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luxa4MacTests/Pods-Luxa4MacTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F1CAC6E80E3FE517C67216 /* libPods.a in Frameworks */,
+				744E29AAE692784B2AAFFB40 /* libPods-Luxa4Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +147,7 @@
 		2B9CA5761CD44F1100B5D5F1 = {
 			isa = PBXGroup;
 			children = (
+				2BEDCF6C1CD6EAFA00977146 /* Luxafor-OSX */,
 				2B579AC31CD59F6400CFAEDD /* Settings and Files */,
 				2B9CA5811CD44F1100B5D5F1 /* Luxa4Mac */,
 				2B9CA5981CD44F1100B5D5F1 /* Luxa4MacTests */,
@@ -149,6 +171,7 @@
 		2B9CA5811CD44F1100B5D5F1 /* Luxa4Mac */ = {
 			isa = PBXGroup;
 			children = (
+				2BEDCF7A1CD7006300977146 /* Luxa4Mac.entitlements */,
 				2B9CA5821CD44F1100B5D5F1 /* AppDelegate.h */,
 				2B9CA5831CD44F1100B5D5F1 /* AppDelegate.m */,
 				2B9CA5881CD44F1100B5D5F1 /* ViewController.h */,
@@ -158,6 +181,8 @@
 				2B9CA5901CD44F1100B5D5F1 /* Info.plist */,
 				2B9CA5851CD44F1100B5D5F1 /* Supporting Files */,
 				2B9CA5BB1CD4518C00B5D5F1 /* Categories */,
+				2BEDCF7C1CD700D600977146 /* DeviceColor.h */,
+				2BEDCF7D1CD700D600977146 /* DeviceColor.m */,
 			);
 			path = Luxa4Mac;
 			sourceTree = "<group>";
@@ -175,6 +200,7 @@
 			children = (
 				2B9CA5991CD44F1100B5D5F1 /* Luxa4MacTests.m */,
 				2B9CA59B1CD44F1100B5D5F1 /* Info.plist */,
+				2BEDCF7F1CD703AC00977146 /* DeviceTests.m */,
 			);
 			path = Luxa4MacTests;
 			sourceTree = "<group>";
@@ -182,6 +208,7 @@
 		2B9CA5A91CD4510900B5D5F1 /* Luxa4MacXPC */ = {
 			isa = PBXGroup;
 			children = (
+				2BEDCF7B1CD7007F00977146 /* Luxa4MacXPC.entitlements */,
 				2B9CA5AA1CD4510900B5D5F1 /* Luxa4MacXPCProtocol.h */,
 				2B9CA5AB1CD4510900B5D5F1 /* Luxa4MacXPC.h */,
 				2B9CA5AC1CD4510900B5D5F1 /* Luxa4MacXPC.m */,
@@ -196,8 +223,21 @@
 			children = (
 				2B9CA5B81CD4518600B5D5F1 /* NSColor+Luxa4Mac.h */,
 				2B9CA5B91CD4518600B5D5F1 /* NSColor+Luxa4Mac.m */,
+				2BEDCF751CD6F92500977146 /* NSData+Luxa4Mac.h */,
+				2BEDCF761CD6F92500977146 /* NSData+Luxa4Mac.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		2BEDCF6C1CD6EAFA00977146 /* Luxafor-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDCF6D1CD6EB1600977146 /* hid.c */,
+				2BEDCF6E1CD6EB1600977146 /* hidapi.h */,
+				2BEDCF6F1CD6EB1600977146 /* LXDevice.h */,
+				2BEDCF701CD6EB1600977146 /* LXDevice.m */,
+			);
+			name = "Luxafor-OSX";
 			sourceTree = "<group>";
 		};
 		47FBFE2AF0000A8561005413 /* Frameworks */ = {
@@ -205,6 +245,7 @@
 			children = (
 				EF32050B235EDEDBE85DD0B1 /* libPods.a */,
 				394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */,
+				8DF925A08145BB39F0617D79 /* libPods-Luxa4Mac.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,6 +335,11 @@
 				TargetAttributes = {
 					2B9CA57E1CD44F1100B5D5F1 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					2B9CA5941CD44F1100B5D5F1 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -301,6 +347,11 @@
 					};
 					2B9CA5A71CD4510900B5D5F1 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -423,7 +474,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luxa4Mac/Pods-Luxa4Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2DC2EB2FF7C4AEA02AD1D3F /* Embed Pods Frameworks */ = {
@@ -438,7 +489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luxa4Mac/Pods-Luxa4Mac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -449,9 +500,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9CA58A1CD44F1100B5D5F1 /* ViewController.m in Sources */,
+				2BEDCF771CD6F92500977146 /* NSData+Luxa4Mac.m in Sources */,
 				2B9CA5871CD44F1100B5D5F1 /* main.m in Sources */,
 				2B9CA5841CD44F1100B5D5F1 /* AppDelegate.m in Sources */,
 				2B9CA5BA1CD4518600B5D5F1 /* NSColor+Luxa4Mac.m in Sources */,
+				2BEDCF7E1CD700D600977146 /* DeviceColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9CA59A1CD44F1100B5D5F1 /* Luxa4MacTests.m in Sources */,
+				2BEDCF801CD703AC00977146 /* DeviceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +521,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEDCF781CD6FC4A00977146 /* NSData+Luxa4Mac.m in Sources */,
+				2BEDCF721CD6EB1600977146 /* hid.c in Sources */,
+				2BEDCF741CD6EB1600977146 /* LXDevice.m in Sources */,
 				2B9CA5AF1CD4510900B5D5F1 /* main.m in Sources */,
 				2B9CA5AD1CD4510900B5D5F1 /* Luxa4MacXPC.m in Sources */,
+				2BEDCF791CD6FC4E00977146 /* NSColor+Luxa4Mac.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +641,7 @@
 			baseConfigurationReference = 7DD37AD31123B98A5DCF725B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Luxa4Mac/Luxa4Mac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -596,6 +655,7 @@
 			baseConfigurationReference = B093D9869278B60087FC2FDB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Luxa4Mac/Luxa4Mac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -634,7 +694,9 @@
 		};
 		2B9CA5B41CD4510900B5D5F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD37AD31123B98A5DCF725B /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Luxa4MacXPC/Luxa4MacXPC.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4MacXPC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4MacXPC;
@@ -645,7 +707,9 @@
 		};
 		2B9CA5B51CD4510900B5D5F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B093D9869278B60087FC2FDB /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Luxa4MacXPC/Luxa4MacXPC.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4MacXPC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4MacXPC;

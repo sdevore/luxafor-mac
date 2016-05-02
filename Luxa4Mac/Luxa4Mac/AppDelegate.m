@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "DeviceColor.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +20,7 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    [[DeviceColor new] setColor:[NSColor blackColor] withReply:nil];
 }
 
 @end
