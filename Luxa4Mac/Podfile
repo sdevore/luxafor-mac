@@ -1,6 +1,5 @@
 platform :osx, "10.10"
 
-pod "DevMateKit"
 pod "NSColor-Crayola"
 pod "NSColor-Pantone"
 pod "CocoaLumberjack"
@@ -9,4 +8,8 @@ pod "XCDLumberjackNSLogger"
 target :Luxa4MacTests, :exclusive => true do
   pod 'OHHTTPStubs'
   pod 'OCMock'
+end
+
+target :Luxa4Mac, :exclusive => true do
+    pod "DevMateKit"
 end
