@@ -243,6 +243,7 @@
 		47FBFE2AF0000A8561005413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BC2D6AC1CD832DD00769644 /* libkevlar.a */,
 				EF32050B235EDEDBE85DD0B1 /* libPods.a */,
 				394D6BD426A48A0DC6354382 /* libPods-Luxa4MacTests.a */,
 				8DF925A08145BB39F0617D79 /* libPods-Luxa4Mac.a */,
@@ -645,6 +646,35 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kevlar",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CocoaLumberjack\"",
+					"-l\"NSColor-Crayola\"",
+					"-l\"NSColor-Pantone\"",
+					"-l\"NSLogger\"",
+					"-l\"XCDLumberjackNSLogger\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DevMateKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Kevlar/libkevlar.a\"",
+					"-lcrypto",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4Mac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -659,6 +689,35 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Luxa4Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kevlar",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CocoaLumberjack\"",
+					"-l\"NSColor-Crayola\"",
+					"-l\"NSColor-Pantone\"",
+					"-l\"NSLogger\"",
+					"-l\"XCDLumberjackNSLogger\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DevMateKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Kevlar/libkevlar.a\"",
+					"-lcrypto",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.Luxa4Mac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
