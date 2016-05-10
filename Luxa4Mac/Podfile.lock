@@ -1,11 +1,11 @@
 PODS:
-  - CocoaLumberjack (2.2.0):
-    - CocoaLumberjack/Default (= 2.2.0)
-    - CocoaLumberjack/Extensions (= 2.2.0)
-  - CocoaLumberjack/Core (2.2.0)
-  - CocoaLumberjack/Default (2.2.0):
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.2.0):
+  - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
   - DevMateKit (1.7.1)
   - NSColor-Crayola (1.0)
@@ -41,7 +41,7 @@ DEPENDENCIES:
   - XCDLumberjackNSLogger
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DevMateKit: 3ba77083f5faa40266e0d2d70776de2a82c71dd0
   NSColor-Crayola: 02175a36c323c5c33e263e84f500f0634ee78282
   NSColor-Pantone: 4729b971b2e5ac452c9eeba1286b5982e1435180
