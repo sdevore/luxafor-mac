@@ -14,3 +14,4 @@ on_failure: always # default: always
 
 before_install:
 - gem install cocoapods
+- pod repo update
