@@ -1,15 +1,29 @@
 platform :osx, "10.10"
 
-pod "NSColor-Crayola"
-pod "NSColor-Pantone"
-pod "CocoaLumberjack"
-pod "XCDLumberjackNSLogger"
-
-target :Luxa4MacTests, :exclusive => true do
-  pod 'OHHTTPStubs'
-  pod 'OCMock'
-end
-
-target :Luxa4Mac, :exclusive => true do
-    pod "DevMateKit"
+abstract_target 'PivotalTracker' do
+    pod "NSColor-Crayola"
+    pod "NSColor-Pantone"
+    pod "CocoaLumberjack"
+    pod "XCDLumberjackNSLogger"
+    abstract_target 'Tests' do
+        pod 'OHHTTPStubs'
+        pod 'OCMock'
+    
+        target :Luxa4MacTests do
+       
+        end
+    
+        target :Luxa4MacXPCTests do
+    
+        end
+    end
+    
+    target :Luxa4Mac do
+        pod "DevMateKit"
+    end
+   
+    
+    target :Luxa4MacXPC do
+        
+    end
 end

@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "DMKevlarApplication.h"
 #import "DeviceColor.h"
+#import <DevMateKit/DevMateKit.h>
 @interface AppDelegate ()
 
 @end
@@ -18,11 +20,11 @@
     // Insert code here to initialize your application
     DMKitDebugAddActivationMenu();
     [DevMateKit sendTrackingReport:nil delegate:nil];
-    
+
     if (!DMKIsApplicationActivated(NULL)) {
         [DevMateKit setupTimeTrial:nil withTimeInterval:kDMTrialWeek];
     }
-   }
+}
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application

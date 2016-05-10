@@ -23,6 +23,13 @@
            withReply:(void (^)(BOOL completed))reply;
 @end
 
+@protocol Luxa4MacXPCReportingProtocol
+
+- (void)updateProgress:(double)currentProgress;
+- (void)finished;
+
+@end
+
 /*
  To use the service from an application or other process, use NSXPCConnection to establish a connection to the service
 by doing something like this:
